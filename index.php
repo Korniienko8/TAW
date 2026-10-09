@@ -2,16 +2,16 @@
 session_start();
 
 if (isset( $_POST["login"]) && isset($_POST["pass"])) {
-if ($_POST["login"] = "admin" && $_POST["pass"] = "tajne123") {
+if ($_POST["login"] == "admin" && $_POST["pass"] == "tajne123") {
     $_SESSION["user"] = "admin";
     $_SESSION["pass"] = "tajne123";
 }
 }
-if (isset($_POST["login"]) && isset ($_POST["pass"])){
-    if (isset($_SESSION["user"])) {
+
+    if (isset($_SESSION["user"]) && isset($_SESSION["pass"])) {
     header("location: panel.php");
-    exit();
-}}
+    exit();}
+
 ?>
 
 
@@ -25,7 +25,7 @@ if (isset($_POST["login"]) && isset ($_POST["pass"])){
 <body>
      <form method="POST">
         <input placeholder="login" name="login" id="login">
-        <input placeholder="password" id="pass">
+        <input placeholder="password" id="pass" name="pass">
         <button type="submit" id="confim">confim</button>
     </form>
     
