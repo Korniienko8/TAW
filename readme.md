@@ -1,0 +1,1 @@
+JEDYNKA ZA BRAK WyCzYsCzEnIa POŚWIADCZEŃ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
