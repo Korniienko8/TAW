@@ -1,13 +1,19 @@
-<?php 
+<?php
 session_start();
-$_SESSION['user'] = 'admin';
-$_SESSION['password'] = 'tajne123';
-if(isset($_SESSION["user"])){
+
+if (isset( $_POST["login"]) && isset($_POST["pass"])) {
+if ($_POST["login"] = "admin" && $_POST["pass"] = "tajne123") {
+    $_SESSION["user"] = "admin";
+    $_SESSION["pass"] = "tajne123";
+}
+}
+if (isset($_POST["login"]) && isset ($_POST["pass"])){
+    if (isset($_SESSION["user"])) {
     header("location: panel.php");
     exit();
-}
-    
+}}
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -17,10 +23,10 @@ if(isset($_SESSION["user"])){
     <title>Document</title>
 </head>
 <body>
-    <form method="POST">
-        <input id="login">
-        <input id="password">
-        <button></button>
+     <form method="POST">
+        <input placeholder="login" name="login" id="login">
+        <input placeholder="password" id="pass">
+        <button type="submit" id="confim">confim</button>
     </form>
     
 </body>
